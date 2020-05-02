@@ -19,5 +19,3 @@ function sectionOne() {
     num2 = document.getElementById("sectionThreeSecondNumber").value;
     document.getElementById("sectionThreeResult").innerHTML = "$" + num1 / num2;
   }
-
-  //new shit

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Morgage Calculator</title>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- <link rel="icon" href="favicon.ico"> -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+
+      <!-- Styles -->
+      <style>
+          h1 {font-size: 1.4em;}
+          small {font-size: 0.6em;}
+      </style>
+    </head>
+    <body>
+      <section class="pt-0 pb-0">
+        <div class="container-fluid m-0 ">
+          <div class="row d-md-flex-row h-100 overflow-hidden">
+            <div class="col-md-4 bg-dark d-flex text-center align-content-center text-white overflow-hidden">
+              <div class=" text-center align-self-center mt-md-5 mb-md-5 pt-5 pb-5 pl-md-5 pr-md-5">
+                <h1 class="mt-md-5">Calculate Lease Price</h1>
+                <form>
+                    <label>Purchase Price :</label>
+                    <input type="text" id="sectionOneFirstNumber" />
+                    <br />
+                    <label>Square Footage:</label>
+                    <input type="text" id="sectionOneSecondNumber" />
+                    <br />
+                    <p>
+                        <button type="button" class="btn btn-primary mt-4" onClick="sectionOne()" Value="Calculate Price/SqFt">Calculate</button>
+                    </p>
+                    <label>Yearly Lease Price:</label><span id="sectionOneResult1"> ...</span>
+                    <br />
+                    <label>Monthly Lease Price:</label><span id="sectionOneResult2"> ...</span>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-md-4 bg-dark d-flex text-center align-content-center text-white overflow-hidden">
+              <div class=" text-center align-self-center mt-md-5 mb-md-5 pt-5 pb-5 pl-md-5 pr-md-5">
+                <h1 class="mt-md-5">Calculate Rental <small>Price/SqFt</small></h1>
+                <form>
+                    <label>Purchase Price :</label>
+                    <input type="text" id="sectionTwoFirstNumber" />
+                    <br />
+                    <label>Square Footage:</label>
+                    <input type="text" id="sectionTwoSecondNumber" />
+                    <br />
+                    <p>
+                        <button type="button" class="btn btn-primary mt-4" onClick="sectionTwo()" Value="Calculate Price/SqFt">Calculate</button>
+                    </p>
+                    <label>Rental Price:</label>
+                    <span id="sectionTwoResult"> ___</span> <small>Price/SqFt</small>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-4 bg-dark d-flex text-center align-content-center text-white overflow-hidden">
+              <div class=" text-center align-self-center mt-md-5 mb-md-5 pt-5 pb-5 pl-md-5 pr-md-5">
+                <h1 class="mt-md-5">Calculate Purchase <small>Price/SqFt</small></h1>
+                <form>
+                    <label>Purchase Price :</label>
+                    <input type="text" id="sectionThreeFirstNumber" />
+                    <br />
+                    <label>Square Footage:</label>
+                    <input type="text" id="sectionThreeSecondNumber" />
+                    <br />
+                    <p>
+                        <button type="button" class="btn btn-primary mt-4" onClick="sectionThree()" Value="Calculate Price/SqFt">Calculate</button>
+                    </p>
+                    <label>Calculate Purchase Price:</label>
+                    <span id="sectionThreeResult">...</span>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- jQuery is required -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+      <script src="app.js"></script>
+    </body>
+</html>

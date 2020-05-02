@@ -19,18 +19,3 @@ function sectionOne() {
     num2 = document.getElementById("sectionThreeSecondNumber").value;
     document.getElementById("sectionThreeResult").innerHTML = "$" + num1 / num2;
   }
-  
-  // TESTING
-  // function multiplyBy(num) {
-  //   num1 = document.getElementById("firstNumber").value.num_parts;
-  //   num2 = document.getElementById("secondNumber").value.num_parts;
-  
-  //   num1 = num.toString().split(".");
-  //   num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  //   return num_parts.join(".");
-  
-  //   document.getElementById("result1").innerHTML = "$" + num1 * num2;
-  //   document.getElementById("result2").innerHTML =
-  //     "$" + (num1 * num2) / 12 / num2;
-  // }
-  

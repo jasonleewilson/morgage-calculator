@@ -5,8 +5,7 @@ function sectionOne() {
     result1 = num1 * num2;
     result1 = Math.round(result1 / 12);
   
-    result2 = num1 * num2;
-    result2 = Math.round(result2);
+    result2 = Math.round(num1 * num2);
 
     // result2 = num1 * num2 * 12;
     // result2 = Math.round(result2 * 100) / 100;

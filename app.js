@@ -3,10 +3,17 @@ function sectionOne() {
     num2 = document.getElementById("sectionOneSecondNumber").value;
   
     result1 = num1 * num2;
-    result1 = Math.round(result1 * 100) / 100;
+    result1 = Math.round(result1 / 12);
   
-    result2 = num1 * num2 * 12;
-    result2 = Math.round(result2 * 100) / 100;
+    result2 = num1 * num2;
+    result2 = Math.round(result2);
+
+    // result2 = num1 * num2 * 12;
+    // result2 = Math.round(result2 * 100) / 100;
+
+    // Lease Price:
+    // (Price per Square Foot x Square Footage)/12 months = Monthly Lease Price
+    // ($12) x (100 sqFt) = $1,200 then $1,200/12 months = $100 Monthly Lease Price
   
     document.getElementById("sectionOneResult1").innerHTML = "$" + result1;
     document.getElementById("sectionOneResult2").innerHTML = "$" + result2;

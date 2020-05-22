@@ -23,7 +23,7 @@ function sectionOne() {
     num2 = document.getElementById("sectionTwoSecondNumber").value;
   
     result = (num1 * 12) / num2;
-    result = Math.round(result * 100) / 100;
+    // result = Math.round(result * 100) / 100;
   
     document.getElementById("sectionTwoResult").innerHTML = "$" + result;
   }
